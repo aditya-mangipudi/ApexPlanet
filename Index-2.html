@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Intermediate HTML CSS JS</title>
+    <link rel="stylesheet" href="style-2.css">
+</head>
+<body>
+
+<header>
+    <h1>Internship Task Dashboard</h1>
+</header>
+
+<div class="container">
+
+    <!-- Contact Form -->
+    <section class="card">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Full Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="email" id="email" placeholder="Email Address">
+            <small class="error" id="emailError"></small>
+
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <small class="error" id="messageError"></small>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="card">
+        <h2>Dynamic To-Do List</h2>
+
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+</div>
+
+<script src="script-2.js"></script>
+</body>
+</html>

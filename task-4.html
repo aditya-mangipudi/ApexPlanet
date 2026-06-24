@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karthik Aditya | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+position:sticky;
+top:0;
+background:#111827;
+padding:15px 50px;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+color:#06b6d4;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#111827,#0f766e);
+}
+
+.hero h1{font-size:60px;}
+.hero h3{margin-top:10px;color:#22d3ee;}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+background:#06b6d4;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#22d3ee;
+}
+
+.card,
+.project-card,
+.todo-box,
+.contact-card,
+.product{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.bar{
+height:10px;
+background:#334155;
+margin-top:10px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#06b6d4;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+transition:.4s;
+}
+
+.todo-box{
+max-width:600px;
+margin:auto;
+}
+
+.todo-box input{
+width:70%;
+padding:10px;
+}
+
+.todo-box button{
+padding:10px;
+background:#06b6d4;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+#taskList li{
+list-style:none;
+padding:10px;
+margin-top:10px;
+background:#334155;
+display:flex;
+justify-content:space-between;
+}
+
+.controls{
+display:flex;
+gap:20px;
+justify-content:center;
+margin-bottom:30px;
+flex-wrap:wrap;
+}
+
+.controls select{
+padding:10px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.contact-card{
+max-width:700px;
+margin:auto;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+form input,
+form textarea{
+padding:10px;
+}
+
+form button{
+background:#06b6d4;
+border:none;
+padding:10px;
+color:white;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:40px;}
+nav{flex-direction:column;}
+.todo-box input{width:100%;margin-bottom:10px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2 class="logo">Karthik Aditya</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#todo">To-Do</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h1>Karthik Aditya</h1>
+<h3>MCA | Aditya University</h3>
+<p>Web Developer | AI Enthusiast | Machine Learning Developer</p>
+<a href="#projects" class="btn">View Projects</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+I'm Karthik Aditya, pursuing MCA at Aditya University.
+Passionate about Artificial Intelligence, Deep Learning,
+Computer Vision, and Full Stack Development.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+
+<div class="skill-card">HTML<div class="bar"><span style="width:95%"></span></div></div>
+<div class="skill-card">CSS<div class="bar"><span style="width:90%"></span></div></div>
+<div class="skill-card">JavaScript<div class="bar"><span style="width:88%"></span></div></div>
+<div class="skill-card">Python<div class="bar"><span style="width:92%"></span></div></div>
+<div class="skill-card">Machine Learning<div class="bar"><span style="width:85%"></span></div></div>
+<div class="skill-card">Deep Learning<div class="bar"><span style="width:80%"></span></div></div>
+
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="project-grid">
+
+<div class="project-card">
+<h3>Campus Vue AI System</h3>
+<p>AI-driven student monitoring system.</p>
+</div>
+
+<div class="project-card">
+<h3>Image Recognition System</h3>
+<p>Computer vision system using ML.</p>
+</div>
+
+<div class="project-card">
+<h3>Disease Detection System</h3>
+<p>Deep learning-based medical prediction.</p>
+</div>
+
+</div>
+</section>
+
+<section id="todo">
+<h2>To-Do Manager</h2>
+<div class="todo-box">
+<input type="text" id="taskInput" placeholder="Enter Task">
+<button onclick="addTask()">Add Task</button>
+<ul id="taskList"></ul>
+</div>
+</section>
+
+<section id="products">
+<h2>Product Listing</h2>
+
+<div class="controls">
+<select id="categoryFilter" onchange="displayProducts()">
+<option value="all">All Categories</option>
+<option value="Electronics">Electronics</option>
+<option value="Books">Books</option>
+<option value="Accessories">Accessories</option>
+</select>
+
+<select id="sortOption" onchange="displayProducts()">
+<option value="default">Sort</option>
+<option value="priceLow">Price Low → High</option>
+<option value="priceHigh">Price High → Low</option>
+<option value="rating">Highest Rating</option>
+</select>
+</div>
+
+<div id="productContainer" class="product-grid"></div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+
+<div class="contact-card">
+<p><i class="fa-solid fa-envelope"></i> mkarthikaditya@gmail.com</p>
+<p><i class="fa-solid fa-building-columns"></i> Aditya University</p>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Message"></textarea>
+<button type="submit">Send</button>
+</form>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Karthik Aditya</p>
+</footer>
+
+<script>
+// TO DO APP
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+function saveTasks(){
+localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function renderTasks(){
+const list = document.getElementById("taskList");
+list.innerHTML = "";
+
+tasks.forEach((task,index)=>{
+list.innerHTML += `
+<li>
+${task}
+<button onclick="deleteTask(${index})">Delete</button>
+</li>`;
+});
+}
+
+function addTask(){
+const input = document.getElementById("taskInput");
+if(input.value.trim()==="") return;
+
+tasks.push(input.value);
+saveTasks();
+renderTasks();
+input.value="";
+}
+
+function deleteTask(index){
+tasks.splice(index,1);
+saveTasks();
+renderTasks();
+}
+
+renderTasks();
+
+
+// PRODUCT LISTING
+const products = [
+{name:"Laptop", category:"Electronics", price:700, rating:4.8},
+{name:"Smartphone", category:"Electronics", price:500, rating:4.6},
+{name:"Java Programming", category:"Books", price:25, rating:4.9},
+{name:"AI Fundamentals", category:"Books", price:30, rating:4.7},
+{name:"Wireless Mouse", category:"Accessories", price:20, rating:4.4},
+{name:"Mechanical Keyboard", category:"Accessories", price:50, rating:4.5}
+];
+
+function displayProducts(){
+
+let filtered = [...products];
+
+const category = document.getElementById("categoryFilter").value;
+const sort = document.getElementById("sortOption").value;
+
+if(category !== "all"){
+filtered = filtered.filter(p => p.category === category);
+}
+
+if(sort === "priceLow"){
+filtered.sort((a,b)=>a.price-b.price);
+}
+if(sort === "priceHigh"){
+filtered.sort((a,b)=>b.price-a.price);
+}
+if(sort === "rating"){
+filtered.sort((a,b)=>b.rating-a.rating);
+}
+
+const container = document.getElementById("productContainer");
+container.innerHTML = "";
+
+filtered.forEach(product=>{
+container.innerHTML += `
+<div class="product">
+<h3>${product.name}</h3>
+<p>Category: ${product.category}</p>
+<p>Price: $${product.price}</p>
+<p>Rating: ⭐ ${product.rating}</p>
+</div>`;
+});
+}
+
+displayProducts();
+</script>
+
+</body>
+</html>
